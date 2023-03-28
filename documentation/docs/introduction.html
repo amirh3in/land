@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>TheDocs — Changelog</title>
+    <title>TheDocs — Introduction</title>
 
     <!-- Styles -->
     <link href="../assets/css/page.min.css" rel="stylesheet">
@@ -17,11 +17,11 @@
     <link rel="icon" href="../assets/img/favicon.png">
   </head>
 
-  <body data-spy="scroll" data-target=".nav-sidebar" data-offset="100">
+  <body>
 
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-stick-dark">
+    <!-- Navbar --> -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark">
       <div class="container">
 
         <div class="navbar-left">
@@ -136,12 +136,11 @@
 
 
     <!-- Header -->
-    <header class="header" style="background-color: #f1f6fa">
+    <!-- <header class="header text-white bg-dark pt-9 pb-5" style="background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);">
       <div class="container">
-        <h1>Changelog</h1>
-        <p class="lead">In this page, you can find a record of all the changes made to this project such as bug fixes, new features, etc.</p>
+        <h3>Documentation</h3>
       </div>
-    </header><!-- /.header -->
+    </header>/.header -->
 
 
     <!-- Main Content -->
@@ -155,21 +154,61 @@
           | Sidebar
           |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
           !-->
-          <div class="col-md-4 col-xl-3">
-            <aside class="sidebar sidebar-sticky pr-md-4">
-              <h6 class="sidebar-title">Releases</h6>
-              <ul class="nav nav-sidebar nav-sidebar-pill">
+          <div class="col-md-4 col-xl-3 order-last order-md-first">
+            <hr class="d-md-none">
+            <aside class="bl-1 pl-md-5 sidebar sidebar-stick-shadow sidebar-sticky">
+              <ul class="nav nav-sidebar nav-sidebar-hero" data-accordion="true">
                 <li class="nav-item">
-                  <a class="nav-link" href="#v1-2-0">1.2.0</a>
+                  <a class="nav-link active" href="#">Getting started <i class="nav-angle"></i></a>
+                  <div class="nav">
+                    <a class="nav-link active" href="kb-introduction.html">Introduction</a>
+                    <a class="nav-link" href="kb-contents.html">Contents</a>
+                    <a class="nav-link" href="kb-basic-starter.html">Basic starter</a>
+                    <a class="nav-link" href="kb-expert-starter.html">Expert starter</a>
+                  </div>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#v1-1-0">1.1.0</a>
+                  <a class="nav-link" href="#">Content <i class="nav-angle"></i></a>
+                  <div class="nav">
+                    <a class="nav-link" href="typography.html">Typography</a>
+                    <a class="nav-link" href="code.html">Code</a>
+                    <a class="nav-link" href="icon.html">Icon</a>
+                    <a class="nav-link" href="image.html">Image</a>
+                    <a class="nav-link" href="table.html">Table</a>
+                    <a class="nav-link" href="video.html">Video</a>
+                  </div>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#v1-0-0">1.0.0</a>
+                  <a class="nav-link" href="#">Layout <i class="nav-angle"></i></a>
+                  <div class="nav">
+                    <a class="nav-link" href="navbar.html">Navbar</a>
+                    <a class="nav-link" href="sidebar.html">Sidebar</a>
+                    <a class="nav-link" href="toc.html">Table of content</a>
+                    <a class="nav-link" href="utility.html">Utility classes</a>
+                  </div>
                 </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Components <i class="nav-angle"></i></a>
+                  <div class="nav">
+                    <a class="nav-link" href="accordion.html">Accordion</a>
+                    <a class="nav-link" href="alert.html">Alert</a>
+                    <a class="nav-link" href="badge.html">Badge</a>
+                    <a class="nav-link" href="button.html">Button</a>
+                    <a class="nav-link" href="files.html">Files</a>
+                    <a class="nav-link" href="form.html">Form</a>
+                    <a class="nav-link" href="pagination.html">Pagination</a>
+                    <a class="nav-link" href="palette.html">Palette</a>
+                    <a class="nav-link" href="progress.html">Progress</a>
+                    <a class="nav-link" href="scroll.html">Scroll</a>
+                    <a class="nav-link" href="social.html">Social</a>
+                    <a class="nav-link" href="steps.html">Steps</a>
+                    <a class="nav-link" href="tab.html">Tab</a>
+                  </div>
+                </li>
+
               </ul>
             </aside>
           </div>
@@ -180,151 +219,39 @@
           | Content
           |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
           !-->
-          <div class="col-md-7 col-xl-8 ml-md-auto py-8">
+          <div class="col-md-7 col-xl-8 m-md-auto py-8">
+            <article>
 
-            <div id="v1-2-0" class="card border hover-shadow-7 mb-8">
-              <div class="card-body bb-1 bg-light flexbox">
-                <h4 class="mb-0"><a href="#v1-2-0">1.2.0</a></h4>
-                <time class="small">June 22, 2018</time>
-              </div>
+              <h1>معرفی</h1>
+              <p class="lead">In this article, we help you to start and configure your project by creating a copy of thedocs. Make sure you've read the <a href="kb-contents.html">contents</a> article before continuing.</p>
 
-              <div class="card-body">
-                <div class="lead">We proud to announce the new release of product. Detract yet delight written farther his general. If in so bred at dare rose lose good. Feel and make two real miss use easy. Celebrated delightful an especially increasing.</div>
+              <hr class="my-8">
 
-                <hr>
+              <h2 id="copy">Copy</h2>
+              <p>Our template comes with two powerful starter templates that you should use one of them as a boilerplate for your project. You should simply copy one of the starter directory to your desire destination and start developing.</p>
 
-                <h5>Highlights</h5>
-                <ul>
-                  <li>Added new custom range form control.</li>
-                  <li>Added new .carousel-fade modifier to switch carousel from slides to crossfade.</li>
-                  <li>Added new .dropdown-item-text for plaintext dropdown items.</li>
-                  <li>Added ability to disable Popper's positioning in dropdowns.</li>
-                  <li>Breadcrumbs can now use non-string values as dividers.</li>
-                </ul>
+              <h5>Choose a starter template</h5>
+              <p>As you might see in the <code>/starter</code> directory, we have two starters; <a href="kb-basic-starter.html">basic</a> and <a href="kb-expert-starter.html">expert</a>:</p>
+              <ul>
+                <li><strong>Basic starter</strong>: This starter suites for simple websites which doesn't require any customization to TheDocs code and writing few additional CSS and JS codes would be enough. It doesn't require npm and doesn't have gulp tasks.</li>
+                <li><strong>Expert starter</strong>: The expert starter has several features which is not included in the basic starter. Those features give you more freedom in customizing your template and writing extra codes. It includes a gulpfile with necessary tasks to start a web server, watch files for changes and compile SCSS and JS files. Finally, you can run a command to have all the required files for production copied to a directory.</li>
+              </ul>
+              <p>We strongly recommend using the <mark>expert starter</mark>, but the basic starter template is advised to people who are not familiar with npm, task runners and scss; and developing small-scaled websites with less customization.</p>
 
+              <hr class="hr-dash my-7">
 
-                <h5>CSS</h5>
-                <ul>
-                  <li>Fix wrong z-index of focused custom file in input group</li>
-                  <li>Fix double-transition bug</li>
-                  <li>Add disabled background color to disabled custom file</li>
-                  <li>Custom forms transition</li>
-                </ul>
+              <h2 id="configure">Configure</h2>
+              <p>Open /assets/js/script.js file and set the configuration options if you'd like. There's possibility to set your Google API Key, Google Analytics Tracking, and choose to have smooth scroll or not, etc. The script.js file has a complete documentation to help you configuring your template.</p>
+              <p>If you're going to have a contact form in your website, you should make some more configurations. Please open /assets/php/sendmail.php files and configure your contact form with specifying your email address and default subject.</p>
+              <p>Based on the starter template you chose, you should also read the "How to get started?" article of <a href="kb-basic-starter.html">basic starter</a> or <a href="kb-expert-starter.html">expert starter</a>.</p>
 
+              <hr class="hr-dash my-7">
 
-                <h5>JS</h5>
-                <ul>
-                  <li>Improve how we query elements</li>
-                  <li>Fix XSS in tooltip, collapse and scrollspy plugins</li>
-                </ul>
+              <h2 id="develop">Develop</h2>
+              <p>Now you're ready to start creating your pages. We've already implemented several common pages such as about, contact, privacy policy, faq, etc. and several sample homepages for your next website such as Gmail, Trello, Bootstrap, GitHub, etc. You can keep the pages you need and modify their content, or copy one of the html files and use ready blocks to create your own pages.</p>
+              <p>You can find a lot of ready blocks in the <em>/block directory</em>. Finally, for more advanced users, you can read the documentation in <em>/uikit directory</em> to learn about the elements, components and fundamentals of thedocs and create your own customized blocks.</p>
 
-
-                <h5>Docs</h5>
-                <ul>
-                  <li>Fix inline labels with a custom select</li>
-                  <li>Generate safari-pinned-tab.svg again</li>
-                  <li>Fix node_modules path</li>
-                  <li>Fix markdown code inside HTML code.</li>
-                </ul>
-
-
-                <h5>Build tools</h5>
-                <ul>
-                  <li>Add coveralls to follow our coverage.</li>
-                  <li>Update devDependencies and gems. Node.js 10.x works now.</li>
-                  <li>Stricter stylelint rules.</li>
-                </ul>
-
-              </div>
-            </div>
-
-
-            <div id="v1-1-0" class="card border hover-shadow-7 mb-8">
-              <div class="card-body bb-1 bg-light flexbox">
-                <h4 class="mb-0"><a href="#v1-1-0">1.1.0</a></h4>
-                <time class="small">June 22, 2018</time>
-              </div>
-
-              <div class="card-body">
-                <div class="lead">We proud to announce the new release of product. Detract yet delight written farther his general. If in so bred at dare rose lose good. Feel and make two real miss use easy. Celebrated delightful an especially increasing.</div>
-
-                <hr>
-
-                <h5>Highlights</h5>
-                <ul>
-                  <li>Added new custom range form control.</li>
-                  <li>Added new .carousel-fade modifier to switch carousel from slides to crossfade.</li>
-                  <li>Added new .dropdown-item-text for plaintext dropdown items.</li>
-                  <li>Added ability to disable Popper's positioning in dropdowns.</li>
-                  <li>Breadcrumbs can now use non-string values as dividers.</li>
-                </ul>
-
-
-                <h5>CSS</h5>
-                <ul>
-                  <li>Fix wrong z-index of focused custom file in input group</li>
-                  <li>Fix double-transition bug</li>
-                  <li>Add disabled background color to disabled custom file</li>
-                  <li>Custom forms transition</li>
-                </ul>
-
-
-                <h5>JS</h5>
-                <ul>
-                  <li>Improve how we query elements</li>
-                  <li>Fix XSS in tooltip, collapse and scrollspy plugins</li>
-                </ul>
-
-              </div>
-            </div>
-
-
-            <div id="v1-0-0" class="card border hover-shadow-7">
-              <div class="card-body bb-1 bg-light flexbox">
-                <h4 class="mb-0"><a href="#v1-0-0">1.0.0</a></h4>
-                <time class="small">June 22, 2018</time>
-              </div>
-
-              <div class="card-body">
-                <div class="lead">We proud to announce the new release of product. Detract yet delight written farther his general. If in so bred at dare rose lose good. Feel and make two real miss use easy. Celebrated delightful an especially increasing.</div>
-
-                <hr>
-
-                <h5>Highlights</h5>
-                <ul>
-                  <li>Added new custom range form control.</li>
-                  <li>Added new .carousel-fade modifier to switch carousel from slides to crossfade.</li>
-                  <li>Added new .dropdown-item-text for plaintext dropdown items.</li>
-                  <li>Added ability to disable Popper's positioning in dropdowns.</li>
-                  <li>Breadcrumbs can now use non-string values as dividers.</li>
-                </ul>
-
-
-                <h5>CSS</h5>
-                <ul>
-                  <li>Fix wrong z-index of focused custom file in input group</li>
-                  <li>Fix double-transition bug</li>
-                  <li>Add disabled background color to disabled custom file</li>
-                  <li>Custom forms transition</li>
-                </ul>
-
-
-                <h5>JS</h5>
-                <ul>
-                  <li>Improve how we query elements</li>
-                  <li>Fix XSS in tooltip, collapse and scrollspy plugins</li>
-                </ul>
-
-
-                <h5>Docs</h5>
-                <ul>
-                  <li>Fix inline labels with a custom select</li>
-                  <li>Generate safari-pinned-tab.svg again</li>
-                </ul>
-
-              </div>
-            </div>
-
+            </article>
           </div>
 
 
