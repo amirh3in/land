@@ -1,6 +1,6 @@
 'use strict';
 
-$(function() {
+$(function () {
 
 
   /*
@@ -55,6 +55,22 @@ $(function() {
   | them in this file.
   |
   */
+
+
+  // add bootstrap 5.3
+  if (
+    window.location.href.indexOf('methods')
+    || window.location.href.indexOf('introduction')
+  ) {
+    let css = document.createElement("link");
+    css.href = "../../lib/css/bootstrap.min.css"
+    css.rel= "stylesheet";
+    document.head.appendChild(css);
+
+    let js = document.createElement("script");
+    js.src = "../../lib/js/bootstrap.min.js";
+    document.head.appendChild(js);
+  }
 
 
 
