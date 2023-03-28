@@ -39,8 +39,12 @@
   direction: rtl;
 }
 
-*{
+*:not(pre, code){
   text-align: right;
+}
+
+pre{
+  direction: ltr !important;
 }
 
 .header{
