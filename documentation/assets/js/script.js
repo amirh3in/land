@@ -61,15 +61,16 @@ $(function () {
   // if (
   //   window.location.href.indexOf('methods') > -1
   //   || window.location.href.indexOf('introduction') > -1
+  //   || window.location.href.indexOf('events') > -1
   // ) {
   //   let css = document.createElement("link");
-  //   css.href = "../../lib/css/bootstrap.min.css"
+  //   css.href = "../../css/bootstrap.min.css"
   //   css.rel= "stylesheet";
   //   document.head.appendChild(css);
 
-  //   let js = document.createElement("script");
-  //   js.src = "../../lib/js/bootstrap.min.js";
-  //   document.head.appendChild(js);
+  // //   let js = document.createElement("script");
+  // //   js.src = "../../lib/js/bootstrap.min.js";
+  //   // document.head.appendChild(js);
   // }
 
 

@@ -1,3 +1,17 @@
+
+:root {
+  --light-purple: #F6F4FE;
+  --purple: #6A49F2;
+  --bg-purple: #6A49F2;
+  --dark-purple: #32236F;
+  --dark-bg-text: #9995b1;
+  --body-text-purple: #3E3F66;
+  --text-white: #ffffff;
+  --bg-white: #ffffff;
+  --slider-dots-color: #D4D2DD;
+  --light-bg: #DFDAF3;
+}
+
 .block-number {
   text-align: center;
   font-weight: bold;
@@ -43,6 +57,26 @@
   text-align: right;
   scroll-behavior: smooth !important;
   overscroll-behavior-x: contain !important;
+}
+
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../../fonts/2-IranYekan/iranyekanwebregular.eot");
+  src: url("../../../fonts/2-IranYekan/iranyekanwebregular.eot") format("embedded-opentype"), url("../../../fonts/2-IranYekan/iranyekanwebregular.woff2") format("woff2"), url("../../../fonts/2-IranYekan/iranyekanwebregular.woff") format("woff"), url("../../../fonts/2-IranYekan/iranyekanwebregular.ttf") format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+*{
+  font-family: iranyekan ;
 }
 
 pre{

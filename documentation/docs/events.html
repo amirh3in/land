@@ -17,6 +17,8 @@
     <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
     <link rel="icon" href="../assets/img/favicon.png">
 
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
 </head>
 
 <body data-spy="scroll" data-offset="200" data-target=".nav-sidebar">
@@ -120,7 +122,7 @@
 
                         <h2 id="DayaChat_getMessage"> <code>DayaChat_getMessage</code></h2>
                         <p class="mb-3">با استفاده از این رویداد می توانید وقتی کاربر پیامی دریافت میکند، به محتوای پیام دسترسی پیدا کنید.</p>
-                        <pre class=" code-dark"><code class="language-javascript"> document.addEventListener("DayaChat_sendMessage", (e) => {
+                        <pre class=" code-dark"><code class="language-javascript"> document.addEventListener("DayaChat_getMessage", (e) => {
     let message = e.detail.message;
     let sender = e.detail.sender;
 
