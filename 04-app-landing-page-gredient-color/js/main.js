@@ -223,50 +223,50 @@ $(document).ready(function () {
 
 
 // Download Section Hover Jquery
-window.addEventListener('scroll', function() {
-	var element = document.querySelector('.free_text');
-	var position = element.getBoundingClientRect();
+// window.addEventListener('scroll', function() {
+// 	var element = document.querySelector('.free_text');
+// 	var position = element.getBoundingClientRect();
 
-	if(position.top < window.innerHeight && position.bottom >= 0) {
-    $('.purple_backdrop').css("opacity", "1");
-	}else{
-    //console.log('Element is not visible');
-    $('.purple_backdrop').css("opacity", "0");
-  }
-});
+// 	if(position.top < window.innerHeight && position.bottom >= 0) {
+//     $('.purple_backdrop').css("opacity", "1");
+// 	}else{
+//     //console.log('Element is not visible');
+//     $('.purple_backdrop').css("opacity", "0");
+//   }
+// });
 
-$(window).on('resize', function() {
-  if ($(window).width()<768) {
+// $(window).on('resize', function() {
+//   if ($(window).width()<768) {
       
-    window.addEventListener('scroll', function() {
-      var element = document.querySelector('.mobile_mockup');
-      var position = element.getBoundingClientRect();
+//     window.addEventListener('scroll', function() {
+//       var element = document.querySelector('.mobile_mockup');
+//       var position = element.getBoundingClientRect();
     
-      if(position.top < window.innerHeight && position.bottom >= 0) {
-        $('.purple_backdrop').css("opacity", "1");
-      }else{
-        //console.log('Element is not visible');
-        $('.purple_backdrop').css("opacity", "0");
-      }
-    });
+//       if(position.top < window.innerHeight && position.bottom >= 0) {
+//         $('.purple_backdrop').css("opacity", "1");
+//       }else{
+//         //console.log('Element is not visible');
+//         $('.purple_backdrop').css("opacity", "0");
+//       }
+//     });
 
-  }  
-  else {
+//   }  
+//   else {
 
-    window.addEventListener('scroll', function() {
-      var element = document.querySelector('.free_text');
-      var position = element.getBoundingClientRect();
+//     window.addEventListener('scroll', function() {
+//       var element = document.querySelector('.free_text');
+//       var position = element.getBoundingClientRect();
     
-      if(position.top < window.innerHeight && position.bottom >= 0) {
-        $('.purple_backdrop').css("opacity", "1");
-      }else{
-        //console.log('Element is not visible');
-        $('.purple_backdrop').css("opacity", "0");
-      }
-    });
+//       if(position.top < window.innerHeight && position.bottom >= 0) {
+//         $('.purple_backdrop').css("opacity", "1");
+//       }else{
+//         //console.log('Element is not visible');
+//         $('.purple_backdrop').css("opacity", "0");
+//       }
+//     });
 
-  }
-});
+//   }
+// });
 
 
 // Scrool-top

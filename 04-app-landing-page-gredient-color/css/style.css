@@ -171,7 +171,7 @@ body {
     line-height: 1.7;
     font-family: iranyekan, sans-serif;
     color: var(--body-text-purple);
-    /*background-color: var(--light-purple);*/
+    background-color: var(--light-purple);
     direction: rtl;
     text-align: right;
 }
@@ -1577,19 +1577,6 @@ iframe#youtubevideo {
 /* -------------------Pricing-Section---------------------- */
 
 /* pricing wraper  */
-.pricing_section {
-    background: #32236f;
-    padding: 100px 0;
-}
-
-.pricing_section .section_title h2 {
-    color: var(--text-white);
-}
-
-.pricing_section .section_title p {
-    color: var(--text-white);
-}
-
 .pricing_section .toggle_block {
     display: flex;
     align-items: center;
@@ -1598,7 +1585,7 @@ iframe#youtubevideo {
 
 /* pricing toggle button */
 .pricing_section .toggle_block span {
-    color: var(--dark-bg-text);
+    color: var(--dark-purple);
     font-weight: 600;
     display: block;
     margin: 0 5px;
@@ -1646,7 +1633,7 @@ iframe#youtubevideo {
 
 .pricing_section .toggle_block .month.active,
 .pricing_section .toggle_block .years.active {
-    color: var(--text-white);
+    color: var(--purple);
 }
 
 /* pricing pannel */
@@ -1666,7 +1653,7 @@ iframe#youtubevideo {
     border-radius: 12px;
     padding-top: 60px;
     margin-bottom: 40px;
-    box-shadow: 0px 4px 30px #1d1445;
+    box-shadow: 0px 4px 30px #EDE9FE;
 }
 
 .pricing_section .pricing_pannel .pricing_block.highlited_block {
@@ -1686,7 +1673,7 @@ iframe#youtubevideo {
 
 /* pricing box image */
 .pricing_section .pricing_pannel .pricing_block .icon img {
-    /*width: 100%;*/
+    max-width:100%;
 }
 
 /* pricing box heading h3 */
@@ -1721,13 +1708,11 @@ iframe#youtubevideo {
 .pricing_section .contact_text {
     text-align: center;
     margin-bottom: 0;
-    color: var(--text-white);
 }
 
 .pricing_section .contact_text a {
     color: var(--purple);
     text-decoration: underline;
-    color: var(--text-white);
 }
 
 
@@ -1748,7 +1733,7 @@ iframe#youtubevideo {
     border: none;
     margin-bottom: 20px;
     border-radius: 12px;
-    background-color: var(--light-purple);
+    /* background-color: var(--light-purple); */
     padding: 16px 0;
 }
 
