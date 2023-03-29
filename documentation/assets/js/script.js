@@ -37,7 +37,7 @@ $(function () {
     |
     */
 
-    smoothScroll: true,
+    smoothScroll: false,
 
   });
 
@@ -59,8 +59,8 @@ $(function () {
 
   // add bootstrap 5.3
   if (
-    window.location.href.indexOf('methods')
-    || window.location.href.indexOf('introduction')
+    window.location.href.indexOf('methods') > -1
+    || window.location.href.indexOf('introduction') > -1
   ) {
     let css = document.createElement("link");
     css.href = "../../lib/css/bootstrap.min.css"

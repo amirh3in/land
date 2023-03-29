@@ -39,8 +39,10 @@
   direction: rtl;
 }
 
-*:not(pre, code){
+*{
   text-align: right;
+  scroll-behavior: smooth !important;
+  overscroll-behavior-x: contain !important;
 }
 
 pre{
