@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- <meta name="keywords" content="دایا, دایاچت, چت آنلاین, پشتیبانی آنلاین, نظر مشتری, ارتباط با مشتری, چتباکس, DayaChat, daya, مستندات دایاچت"> -->
+  <meta name="keywords" content="دایا, مستندات, چت آنلاین, پشتیبانی آنلاین, کدنویسی ابزارک چت, dayaChat tutorial, توسعه ابزارک, DayaChat, daya, مستندات دایاچت">
+  <meta name="description" content="با استفاده از قابلیت های ارائه شده میتوانید با ابزارک چت بهتر هماهنگ شوید ">
+
+  <title>دایاچت - مستندات</title>
+
+  <!-- Styles -->
+  <link href="../assets/css/page.min.css" rel="stylesheet">
+  <link href="../assets/css/style.css" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="icon" href="../assets/img/favicon.png">
+</head>
+
+<body data-spy="scroll" data-offset="200" data-target=".nav-sidebar">
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      <div class="row">
+
+
+        <!--
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          | Sidebar
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          !-->
+        <div class="col-md-4 col-xl-3 order-last order-md-first">
+          <hr class="d-md-none">
+          <aside class="bl-1 pl-md-5 sidebar sidebar-stick-shadow sidebar-sticky">
+            <ul class="nav nav-sidebar nav-sidebar-hero position-fixed w-200" data-accordion="true">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">شروع <i class="nav-angle"></i></a>
+                <div class="nav">
+                  <a class="nav-link" href="#introduction">معرفی</a>
+                  <a class="nav-link" href="#script">دریافت اسکریپت</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">توابع<i class="nav-angle"></i></a>
+                <div class="nav">
+                  <a class="nav-link" href="methods.html#open">()open</a>
+                  <a class="nav-link" href="methods.html#close">()close</a>
+                  <a class="nav-link" href="methods.html#hide">()hide</a>
+                  <a class="nav-link" href="methods.html#show">()show</a>
+                  <a class="nav-link" href="methods.html#toggle">()toggle</a>
+                  <a class="nav-link" href="methods.html#toolTipToggle">()toolTipToggle</a>
+                  <a class="nav-link" href="methods.html#sendMessage">()sendMessage</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">رویداد ها <i class="nav-angle"></i></a>
+                <div class="nav">
+                    <a class="nav-link" href="events.html#DayaChat_sendMessage">sendMessage</a>
+                    <a class="nav-link" href="events.html#DayaChat_getMessage">getMessage</a>
+                    <a class="nav-link" href="events.html#DayaChat_Ready">Ready</a>
+                    <a class="nav-link" href="events.html#DayaChat_Open">Open</a>
+                    <a class="nav-link" href="events.html#DayaChat_Close">Close</a>
+                </div>
+            </li>
+            </ul>
+          </aside>
+        </div>
+
+
+        <!--
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          | Content
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          !-->
+        <div class="col-md-7 col-xl-8 m-md-auto py-8">
+          <article>
+
+            <h1 id="introduction">معرفی</h1>
+            <p class="lead" style="text-align: justify;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک
+              است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
+              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+              آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای
+              علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و
+              دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای
+              اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+            </p>
+
+              <hr class="my-8">
+
+            <h2 id="script">دریافت اسکریپت</h2>
+            <!-- <p>ابتدا در  <u><a href="#">پنل ری اکت</a></u> ما ثبتنام کرده و اسکریپت را دریافت کنید</p> -->
+
+
+            <!-- <h5>وارد پنل مدیریتی شوید</h5> -->
+
+
+            <!-- <p>As you might see in the <code>/starter</code> directory, we have two starters; <a href="kb-basic-starter.html">basic</a> and <a href="kb-expert-starter.html">expert</a>:</p> -->
+            <ul>
+              <li>وارد پنل مدیریتی <a href="https://sit-chat-panel.saminray.com">دایاچت</a> شوید</li>
+              <li>از منوی سمت راست <mark>وب سایت ها</mark> را انتخاب کنید</li>
+              <li>برروی <mark>تنظیمات</mark> ابزارک کلیک کنید</li>
+              <!-- <li><strong>Basic starter</strong>: This starter suites for simple websites which doesn't require any customization to TheDocs code and writing few additional CSS and JS codes would be enough. It doesn't require npm and doesn't have gulp tasks.</li>
+                <li><strong>Expert starter</strong>: The expert starter has several features which is not included in the basic starter. Those features give you more freedom in customizing your template and writing extra codes. It includes a gulpfile with necessary tasks to start a web server, watch files for changes and compile SCSS and JS files. Finally, you can run a command to have all the required files for production copied to a directory.</li> -->
+            </ul>
+            <img src="../assets/img/siteSettings.JPG" class="img-fluid" alt="site setting">
+
+            <ul class="mt-4">
+              <li>اسکریپت نمایش داده شده را در قسمت<mark>html</mark> بخش<mark>head</mark> درج کنید</li>
+            </ul>
+              <!-- <ul>
+                <li>مانند تصویر</li>
+              </ul> -->
+            <pre class="line-numbers code-dark"><code class="language-markup"> &lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;
+  &lt;head&gt;
+    ...
+    &lt;script
+      src="fetch.js?ApiKey=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+      id="chatScript">
+    &lt;/script>
+  &lt;/head&gt;
+  &lt;body>
+                    
+
+  &lt;/body>
+&lt;/html></code></pre>
+
+
+            <!-- <p>We strongly recommend using the <mark>expert starter</mark>, but the basic starter template is advised to people who are not familiar with npm, task runners and scss; and developing small-scaled websites with less customization.</p> -->
+
+            <!-- <hr class="hr-dash my-7"> -->
+
+            <!-- <h2 id="configure">پیکربندی</h2>
+              <p>Open /assets/js/script.js file and set the configuration options if you'd like. There's possibility to set your Google API Key, Google Analytics Tracking, and choose to have smooth scroll or not, etc. The script.js file has a complete documentation to help you configuring your template.</p>
+              <p>If you're going to have a contact form in your website, you should make some more configurations. Please open /assets/php/sendmail.php files and configure your contact form with specifying your email address and default subject.</p>
+              <p>Based on the starter template you chose, you should also read the "How to get started?" article of <a href="kb-basic-starter.html">basic starter</a> or <a href="kb-expert-starter.html">expert starter</a>.</p>
+
+              <hr class="hr-dash my-7">
+
+              <h2 id="develop">Develop</h2>
+              <p>Now you're ready to start creating your pages. We've already implemented several common pages such as about, contact, privacy policy, faq, etc. and several sample homepages for your next website such as Gmail, Trello, Bootstrap, GitHub, etc. You can keep the pages you need and modify their content, or copy one of the html files and use ready blocks to create your own pages.</p>
+              <p>You can find a lot of ready blocks in the <em>/block directory</em>. Finally, for more advanced users, you can read the documentation in <em>/uikit directory</em> to learn about the elements, components and fundamentals of thedocs and create your own customized blocks.</p> -->
+
+          </article>
+        </div>
+
+
+      </div>
+    </div>
+  </main><!-- /.main-content -->
+
+
+  <!-- Footer -->
+
+
+  <!-- Scripts -->
+  <script src="../assets/js/page.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

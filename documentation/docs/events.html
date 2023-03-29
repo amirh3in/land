@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>دایاچت - معرفی</title>
+
+    <!-- Styles -->
+    <link href="../assets/css/page.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
+
+</head>
+
+<body data-spy="scroll" data-offset="200" data-target=".nav-sidebar">
+
+    <!-- Main Content -->
+    <main class="main-content" style="margin-bottom: 360px !important;">
+        <div class="container">
+            <div class="row">
+
+
+                <!--
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          | Sidebar
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          !-->
+                <div class="col-md-4 col-xl-3 order-last order-md-first">
+                    <hr class="d-md-none">
+                    <aside class="bl-1 pl-md-5 sidebar sidebar-stick-shadow sidebar-sticky">
+                        <ul class="nav nav-sidebar nav-sidebar-hero position-fixed w-200" data-accordion="true">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">شروع <i class="nav-angle"></i></a>
+                                <div class="nav">
+                                    <a class="nav-link" href="introduction.html#introduction">معرفی</a>
+                                    <a class="nav-link" href="introduction.html#script">دریافت اسکریپت</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">توابع<i class="nav-angle"></i></a>
+                                <div class="nav">
+                                  <a class="nav-link" href="methods.html#open">()open</a>
+                                  <a class="nav-link" href="methods.html#close">()close</a>
+                                  <a class="nav-link" href="methods.html#hide">()hide</a>
+                                  <a class="nav-link" href="methods.html#show">()show</a>
+                                  <a class="nav-link" href="methods.html#toggle">()toggle</a>
+                                  <a class="nav-link" href="methods.html#sendMessage">()sendMessage</a>
+                                  <a class="nav-link" href="methods.html#toolTipToggle">()toolTipToggle</a>
+                                </div>
+                              </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">رویداد ها <i class="nav-angle"></i></a>
+                                <div class="nav">
+                                    <a class="nav-link" href="#DayaChat_sendMessage">sendMessage</a>
+                                    <a class="nav-link" href="#DayaChat_getMessage">getMessage</a>
+                                    <a class="nav-link" href="#DayaChat_Ready">Ready</a>
+                                    <a class="nav-link" href="#DayaChat_Open">Open</a>
+                                    <a class="nav-link" href="#DayaChat_Close">Close</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </aside>
+                </div>
+
+
+                <!--
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          | Content
+          |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+          !-->
+                <div class="col-md-7 col-xl-8 m-md-auto py-8">
+                    <article>
+
+                        <h1 id="introduction">رویداد ها</h1>
+                        <p class="lead" style="text-align: justify;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                            صنعت چاپ، و با استفاده از طراحان گرافیک
+                            است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                            تکنولوژی مورد
+                            اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                        </p>
+
+                        <hr class="my-8">
+
+
+                        <h2 id="DayaChat_sendMessage"> <code>DayaChat_sendMessage</code></h2>
+                        <p class="mb-3">با استفاده از این رویداد می توانید وقتی کاربر پیامی ارسال میکند، به محتوای پیام دسترسی پیدا کنید.</p>
+                        <pre class=" code-dark"><code class="language-javascript"> document.addEventListener("DayaChat_sendMessage", (e) => {
+    let message = e.detail.message;
+    ... 
+    //do somthing with message
+ })</code></pre>
+                        <table class="table table-bordered table-striped table-detail">
+                            <thead>
+                            <tr>
+                                <th>توضیح</th>
+                                <th class="text-left">parameter</th>
+                                <th class="text-left">type</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>متن پیام ارسالی</td>
+                                <td class="text-left"><code>detail.message</code></td>
+                                <td class="text-left">string</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+ <hr class="my-8">
+
+
+                        <h2 id="DayaChat_getMessage"> <code>DayaChat_getMessage</code></h2>
+                        <p class="mb-3">با استفاده از این رویداد می توانید وقتی کاربر پیامی دریافت میکند، به محتوای پیام دسترسی پیدا کنید.</p>
+                        <pre class=" code-dark"><code class="language-javascript"> document.addEventListener("DayaChat_sendMessage", (e) => {
+    let message = e.detail.message;
+    let sender = e.detail.sender;
+
+    ... 
+ })</code></pre>
+                        <table class="table table-bordered table-striped table-detail">
+                            <thead>
+                            <tr>
+                                <th>توضیح</th>
+                                <th class="text-left">parameter</th>
+                                <th class="text-left">type</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>متن پیام دریافتی</td>
+                                <td class="text-left"><code>detail.message</code></td>
+                                <td class="text-left">string</td>
+                            </tr>
+                            <tr>
+                                <td>فرستنده پیام</td>
+                                <td class="text-left"><code>detail.sender</code></td>
+                                <td class="text-left">string</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <hr class="hr-dash my-7">
+
+                        <h2 id="DayaChat_Ready"> <code>DayaChat_Ready</code></h2>
+                        <p class="mb-3">با استفاده از این رویداد می توانید وقتی تنظیمات ابزارک چت کاملا لود شد و آماده کار شد باخبر شوید.</p>
+                        <pre class=" code-dark"><code class="language-javascript"> document.addEventListener("DayaChat_Ready", () => {
+     
+    ... 
+ })</code></pre>
+
+                        <hr class="hr-dash my-7">
+
+                        <h2 id="DayaChat_Open"> <code>DayaChat_Open</code></h2>
+                        <p class="mb-3">با استفاده از این رویداد می توانید وقتی صفحه چت باز شد مطلع شوید.</p>
+                        <pre class=" code-dark"><code class="language-javascript"> document.addEventListener("DayaChat_Open", () => {
+     
+    ... 
+ })</code></pre>
+
+                        <hr class="hr-dash my-7">
+
+                        <h2 id="DayaChat_Close"> <code>DayaChat_Close</code></h2>
+                        <p class="mb-3">با استفاده از این رویداد می توانید وقتی صفحه چت بسته شد مطلع شوید.</p>
+                        <pre class=" code-dark"><code class="language-javascript"> document.addEventListener("DayaChat_Close", () => {
+     
+    ... 
+ })</code></pre>
+
+                    </article>
+                </div>
+
+
+            </div>
+        </div>
+    </main><!-- /.main-content -->
+
+
+    <!-- Footer -->
+
+
+    <!-- Scripts -->
+    <script src="../assets/js/page.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>
