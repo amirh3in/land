@@ -46,7 +46,9 @@
 pre{
   direction: ltr !important;
 }
-
+pre span {
+  background: transparent !important;
+}
 .header{
   display: none;
 }

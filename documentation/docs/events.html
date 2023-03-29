@@ -17,9 +17,6 @@
     <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
     <link rel="icon" href="../assets/img/favicon.png">
 
-    <!-- <link rel="stylesheet" href="../../lib/css/bootstrap.min.css">
-    <script src="../../lib/js/bootstrap.min.js"></script> -->
-
 </head>
 
 <body data-spy="scroll" data-offset="200" data-target=".nav-sidebar">
@@ -65,10 +62,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#">رویداد ها <i class="nav-angle"></i></a>
                                 <div class="nav">
-                                    <a class="nav-link" href="events.html#DayaChat_sendMessage">sendMessage</a>
-                                    <a class="nav-link" href="events.html#DayaChat_Ready">Ready</a>
-                                    <a class="nav-link" href="events.html#DayaChat_Open">Open</a>
-                                    <a class="nav-link" href="events.html#DayaChat_Close">Close</a>
+                                    <a class="nav-link" href="#DayaChat_sendMessage">sendMessage</a>
+                                    <a class="nav-link" href="#DayaChat_getMessage">getMessage</a>
+                                    <a class="nav-link" href="#DayaChat_Ready">Ready</a>
+                                    <a class="nav-link" href="#DayaChat_Open">Open</a>
+                                    <a class="nav-link" href="#DayaChat_Close">Close</a>
                                 </div>
                             </li>
 
@@ -85,48 +83,108 @@
                 <div class="col-md-7 col-xl-8 m-md-auto py-8">
                     <article>
 
-                        <h1 id="introduction">توابع</h1>
+                        <h1 id="introduction">رویداد ها</h1>
                         <p class="lead" style="text-align: justify;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
                             صنعت چاپ، و با استفاده از طراحان گرافیک
                             است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
                             تکنولوژی مورد
-                            نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی یان رسد و زمان مورد نیاز شامل حروفچینی
-                            دستاوردهای
                             اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
                         </p>
 
                         <hr class="my-8">
 
 
-                        <h2 id="open"> <code>()open</code></h2>
-                        <p class="mb-3">با استفاده از این تابع می توانید ابزارک چت را باز کنید.</p>
-                        <pre class=" code-dark"><code class="language-javascript"> DayaChat.open()</code></pre>
+                        <h2 id="DayaChat_sendMessage"> <code>DayaChat_sendMessage</code></h2>
+                        <p class="mb-3">با استفاده از این رویداد می توانید وقتی کاربر پیامی ارسال میکند، به محتوای پیام دسترسی پیدا کنید.</p>
+                        <pre class=" code-dark"><code class="language-javascript"> document.addEventListener("DayaChat_sendMessage", (e) => {
+    let message = e.detail.message;
+    ... 
+    //do somthing with message
+ })</code></pre>
+                        <table class="table table-bordered table-striped table-detail">
+                            <thead>
+                            <tr>
+                                <th>توضیح</th>
+                                <th class="text-left">parameter</th>
+                                <th class="text-left">type</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>متن پیام ارسالی</td>
+                                <td class="text-left"><code>detail.message</code></td>
+                                <td class="text-left">string</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+ <hr class="my-8">
+
+
+                        <h2 id="DayaChat_getMessage"> <code>DayaChat_getMessage</code></h2>
+                        <p class="mb-3">با استفاده از این رویداد می توانید وقتی کاربر پیامی دریافت میکند، به محتوای پیام دسترسی پیدا کنید.</p>
+                        <pre class=" code-dark"><code class="language-javascript"> document.addEventListener("DayaChat_sendMessage", (e) => {
+    let message = e.detail.message;
+    let sender = e.detail.sender;
+
+    ... 
+ })</code></pre>
+                        <table class="table table-bordered table-striped table-detail">
+                            <thead>
+                            <tr>
+                                <th>توضیح</th>
+                                <th class="text-left">parameter</th>
+                                <th class="text-left">type</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>متن پیام دریافتی</td>
+                                <td class="text-left"><code>detail.message</code></td>
+                                <td class="text-left">string</td>
+                            </tr>
+                            <tr>
+                                <td>فرستنده پیام</td>
+                                <td class="text-left"><code>detail.sender</code></td>
+                                <td class="text-left">string</td>
+                            </tr>
+                            </tbody>
+                        </table>
 
                         <hr class="hr-dash my-7">
 
-                        <h2 id="close"> <code>()close</code></h2>
-                        <p class="mb-3">با استفاده از این تابع می توانید ابزارک چت را ببندید.</p>
-                        <pre class=" code-dark"><code class="language-javascript"> DayaChat.close()</code></pre>
+                        <h2 id="DayaChat_Ready"> <code>DayaChat_Ready</code></h2>
+                        <p class="mb-3">با استفاده از این رویداد می توانید وقتی تنظیمات ابزارک چت کاملا لود شد و آماده کار شد باخبر شوید.</p>
+                        <pre class=" code-dark"><code class="language-javascript"> document.addEventListener("DayaChat_Ready", () => {
+     
+    ... 
+ })</code></pre>
 
                         <hr class="hr-dash my-7">
 
-                        <h2 id="hide"> <code>()hide</code></h2>
-                        <p class="mb-3">با استفاده از این تابع می توانید ابزارک چت را مخفی کنید.</p>
-                        <pre class=" code-dark"><code class="language-javascript"> DayaChat.hide()</code></pre>
+                        <h2 id="DayaChat_Open"> <code>DayaChat_Open</code></h2>
+                        <p class="mb-3">با استفاده از این رویداد می توانید وقتی صفحه چت باز شد مطلع شوید.</p>
+                        <pre class=" code-dark"><code class="language-javascript"> document.addEventListener("DayaChat_Open", () => {
+     
+    ... 
+ })</code></pre>
 
                         <hr class="hr-dash my-7">
 
-                        <h2 id="show"> <code>()show</code></h2>
-                        <p class="mb-3">با استفاده از این تابع می توانید ابزارک چت را آشکار کنید.</p>
-                        <pre class=" code-dark"><code class="language-javascript"> DayaChat.show()</code></pre>
+                        <h2 id="DayaChat_Close"> <code>DayaChat_Close</code></h2>
+                        <p class="mb-3">با استفاده از این رویداد می توانید وقتی صفحه چت بسته شد مطلع شوید.</p>
+                        <pre class=" code-dark"><code class="language-javascript"> document.addEventListener("DayaChat_Close", () => {
+     
+    ... 
+ })</code></pre>
 
-                        <hr class="hr-dash my-7">
+                        <!-- <hr class="hr-dash my-7">
 
                         <h2 id="toggle"> <code>()toggle</code></h2>
                         <p class="mb-3">با استفاده از این تابع می توانید ابزارک چت را درصورت بسته بودن باز و درصورت باز بودن ببندید.</p>
-                        <pre class=" code-dark"><code class="language-javascript"> DayaChat.toggle()</code></pre>
+                        <pre class=" code-dark"><code class="language-javascript"> DayaChat.toggle()</code></pre> -->
 
-                        <hr class="hr-dash my-7">
+                        <!-- <hr class="hr-dash my-7">
 
                         <h2 id="sendMessage"> <code>()sendMessage</code></h2>
                         <p class="mb-3">با استفاده از این تابع می توانید پیامی به کاربر ارسال کنید.</p>
@@ -180,7 +238,7 @@
                                 <td class="text-left">string</td>
                             </tr>
                             </tbody>
-                        </table>
+                        </table> -->
 
                     </article>
                 </div>
