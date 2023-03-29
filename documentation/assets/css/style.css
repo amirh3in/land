@@ -85,6 +85,17 @@ pre{
 pre span {
   background: transparent !important;
 }
+
+ul,
+li{
+  list-style: inherit;
+  margin: 6px 0;
+}
+
+hr{
+  border-color: transparent !important;
+}
+
 .header{
   display: none;
 }
